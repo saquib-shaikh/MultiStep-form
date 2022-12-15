@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>MultiStep form using HTML CSS JavaScript</h1>
+    <div class="container">
+        <div class="statusbar">
+            <li>
+                <span class="headings" id="head1">
+                    1
+                </span>
+                <div class="label">Basic Details</div>
+            </li>
+            <div class="line"></div>
+            <li>
+                <span class="headings" id="head2">
+                    2
+                </span>
+                <div class="label">Qualifications</div>
+            </li>
+            <div class="line"></div>
+            <li>
+                <span class="headings" id="head3">
+                    3
+                </span>
+                <div class="label">Previous Experience</div>
+            </li>
+        </div>
+        
+    </div>
+<form id="employementform" action="">
+    <section id="step1" class="form-step">
+        <div class="form-heading">Basic Details</div>
+        <div class="mainbox">
+            <div class="box1">
+                <div class="elem">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" autocomplete="off">
+                    <div class="innertext" id="infirst"> </div>   
+                </div>
+                <div class="elem">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" autocomplete="off">
+                </div>
+                <div class="elem">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" >
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="elem">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="elem">
+                    <label for="num">Mobile Number</label>
+                    <input type="text" id="num" name="mobilenumber">
+                    <div class="innertext" id="inmob"> </div>
+                </div>
+                <div class="elem">
+                    <label for="email">Email ID</label>
+                    <input type="text" id="email" name="email" >
+                    <div class="innertext" id="inemail"> </div>
+                </div>
+                <div class="elem">
+                    <label for="addr">Permanent Address</label>
+                    <input type="text" id="addr" name="address">
+                </div>
+                
+                
+                <div class="elem">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" id="pincode" name="pincode">
+                </div>
+
+                <div class="elem">
+                    <label for="idtype">ID proof Type</label>
+                    <select name="idtype" id="idtype" name="idtype">
+                        <option value="">Select</option>
+                        <option value="Aadhar Card">Aadhar Card</option>
+                        <option value="Pen Card">Pan Card</option>
+                        <option value="Driving Licence">Driving License</option>
+                    </select>
+                </div>
+                <div class="elem">
+                    <label for="idnum">ID Number</label>
+                    <input type="text" id="idnum" name="idnum">
+                </div>
+
+            </div>
+
+        </div>
+        <div id="legal">
+            <label for="moreage">I am legally eligible to work in the country</label>
+            <input type="checkbox" name="eligible" id="moreage" value="Agree">
+        </div>
+        <div id="btnnew1">
+            <submit class="btn" type="submit" id="btn1">Next</submit>
+        </div>
+    </section>
+
+
+
+
+    <section id="step2" class="form-step">
+        <div class="form-heading">Qualifcations</div>
+        <div class="mainbox">
+            <div class="box2">
+                <div>
+                    <h2>Matriculation(10th):</h2>
+                </div>
+                <div class="matric">
+                    <div class="elem">
+                        <label for="board">Board</label>
+                        <input type="text" id="board1" name="board1">
+                    </div>
+                    <div class="elem">
+                        <label for="year">Passing Year</label>
+                        <input type="text" id="year1" name="passyear1">
+                        <div class="innertext" id="inyear1"> </div>
+                    </div>
+                    <div class="elem">
+                        <label for="score">Score</label>
+                        <input type="text" id="Score1" name="score1">
+                    </div>
+                </div>
+                <div>
+                    <h2>HSC or Diploma:</h2>
+                </div>
+                <div class="hsc">
+                    <div class="elem">
+                        <label for="board2">Board</label>
+                        <input type="text" id="board2" name="board2">
+                    </div>
+                    <div class="elem">
+                        <label for="year">Passing Year</label>
+                        <input type="text" id="year2" name="passyear2">
+                        <div class="innertext" id="inyear2"> </div>
+                    </div>
+                    <div class="elem">
+                        <label for="score">Score</label>
+                        <input type="text" id="Score2" name="score2">
+                    </div>
+                </div>
+                <div>
+                    <h2>Graduate Degree:</h2>
+                </div>
+                <div class="degree">
+                    <div class="elem">
+                        <label for="degree">Degree Name</label>
+                        <input type="text" id="degree" name="degree">
+                        <div class="innertext" id="indegree"> </div>
+                    </div>
+                    <div class="elem">
+                        <label for="board3">University</label>
+                        <input type="text" id="board3" name="university">
+                    </div>
+                    <div class="elem">
+                        <label for="year3">Passing Year</label>
+                        <input type="text" id="year3" name="passyear3">
+                        <div class="innertext" id="inyear3"> </div>
+                    </div>
+                    <div class="elem">
+                        <label for="score3">Score</label>
+                        <input type="text" id="Score3" name="score3">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="buttons">
+            <div id="btnnew2">
+                <button class="btn" type="button" id="btn2">Back</button>
+            </div>
+            <div id="btnnew3">
+                <button class="btn" type="button" id="btn3">Next</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="step3" class="form-step">
+        <div class="form-heading">Previous Experience</div>
+        <div class="mainbox">
+            <div class="box3">
+                <div>
+                    <h2>
+                        Latest Employment details:
+                    </h2>
+                </div>
+                <div class="elem">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company">
+                    <div class="innertext" id="incompany"> </div>
+                </div>
+                <div class="elem">
+                    <label for="position">Position</label>
+                    <input type="text" id="position" name="position">
+                    <div class="innertext" id="inposition"> </div>
+                </div>
+                <div class="elem">
+                    <label for="strdate">Start Date</label>
+                    <input type="date" id="strdate" name="startdate">
+                </div>
+                <div class="elem">
+                    <label for="enddate">End date</label>
+                    <input type="date" id="enddate" name="enddate"> 
+                </div>
+                <div class="elem">
+                    <label for="ctc">current CTC</label>
+                    <input type="text" id="ctc" name="currentctc">
+                    <div class="innertext" id="inctc"> </div>
+                </div>
+                <div class="elem">
+                    <label for="exctc">expected CTC</label>
+                    <input type="text" id="exctc" name="expectedctc">
+                </div>
+                <div class="elem">
+                    <label for="ovexp">Overall experience</label>
+                    <input type="text" id="ovexp" name="overall experience">
+                </div>
+                <div class="elem">
+                    <label for="link">LinkedIn profile</label>
+                    <input type="text" id="link" name="linkedIn-link">
+
+                </div>
+        </div>
+        <div class="buttons">
+            <div id="btnnew4">
+                <button class="btn" type="button" id="btn4">Back</button>
+            </div>
+            <div id="btnnew5">
+                <button class="btn" type="button" id="btn5">Submit</button>
+            </div>
+        </div>
+    </section>
+    <section id="step4">
+        <div>
+            <h1>Thank you for your application</h1>
+        </div>
+    </section>
+
+    
+</form>
+<script src="index.js"></script>
+</body>
+</html>
+
+
